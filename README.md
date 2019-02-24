@@ -4,3 +4,5 @@ Summarizes company's reputation across twitter in live stream to improve public 
 ![Sample 1](https://github.com/MoritzHayden/HackCUV_TweetAnalysis/blob/master/PETA1.jpg)
 
 ![Sample 2](https://github.com/MoritzHayden/HackCUV_TweetAnalysis/blob/master/PETA2.jpg)
+
+![Sample 3](https://github.com/MoritzHayden/HackCUV_TweetAnalysis/blob/master/Venezuela.jpg)
