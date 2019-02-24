@@ -6,11 +6,13 @@ from tweepy.streaming import StreamListener
 from tweepy import Stream
 import json
 import pandas as pd
+import sys
 
 
 #Save tweets to file
 tweets_list = []
-    
+
+
 
 #This is a basic listener that just saves received tweets to list
 class StdOutListener(StreamListener):
@@ -27,13 +29,13 @@ class StdOutListener(StreamListener):
             return True
         else:
             return False
-        
+
     def on_error(self, status):
         print (status)
 
 
 def extract_topic(topic):
-
+    print(topic)
     # Variables that contains the user credentials to access Twitter API 
     ACCESS_TOKEN = '1099382652195418112-HSenFzNQCjm1Q8IRRRe1yHKxqoySxT'
     ACCESS_SECRET = '7THNM3M0SBv9JaLBqG4dv6VTTGcRtX8vekDYw5y0RmrhM'
@@ -61,8 +63,11 @@ def extract_topic(topic):
         tweets.append(entry['text'])
 
     #save tweets to file
-    file_name = topic + "tweets"
+    file_name = "tweets"
     with open(file_name, 'w') as file:
         for item in tweets:
             file.write("%s\n" % item)
 
+
+if __name__ == "__main__":
+    extract_topic(*sys.argv[1:])
