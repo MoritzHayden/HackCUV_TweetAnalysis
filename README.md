@@ -1,2 +1,2 @@
 # HackCUV_TweetAnalysis
-Tweet analysis and stock report for Hack CU V submission
+Summarizes company's reputation across twitter in live stream to improve public relations.
